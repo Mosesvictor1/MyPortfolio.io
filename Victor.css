@@ -7,6 +7,7 @@
     list-style-type: none;
     color: #ded1d1;
 }
+b
 
 
 
@@ -59,7 +60,8 @@ body{
     background: var(--body-color);
     max-width: 100%;
     height: 100vh;
-    
+    margin: 0;
+    padding: 0;
 }
 
 #container{
@@ -237,7 +239,7 @@ body{
 .about-col-1 img{
     width: 88%;
     height: 30rem;
-    background-color: rgb(4, 246, 36);
+    background-color: rgb(4, 143, 22);
     border-radius: 15px;
 }
 .about-col-2{
@@ -306,7 +308,7 @@ body{
     text-align: center;
     align-items: center;
     justify-content: center;
-    background-color: rgb(61, 6, 143);
+    background: var(--skill-color);
     height: 25rem;
     box-shadow: 0 0 7px #000000;
     overflow: hidden;
@@ -1474,4 +1476,204 @@ footer .arow-up{
     
     /*---------------mobile-size of contact-section end---------- */
 
+}
+
+@media only screen and (max-width: 375px){
+     #meniItem{
+        width: 100%;
+    }
+
+    /*---------------android-size of about-section start---------- */
+
+    #about{
+        padding: 40px 5%;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .row{
+        display: block;
+        justify-content: center;
+    }
+    
+    .about-col-1{
+        flex-basis: 70%;
+    }
+    .about-col-1 img{
+        width: 100%;
+        height: 30rem;
+        background-color: rgb(4, 246, 36);
+        border-radius: 15px;
+    }
+    .about-col-2{
+        flex-basis: 50%;
+    }
+    .about-col-2 h5{
+        font-size: 12px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    
+    .sub-title{
+        text-align: center;
+        font-size: 50px;
+       
+    }
+    .about-col-2 p{
+        padding: 5px 8px;
+        font-size: 17px;
+        
+    }
+    .about-col-2 .btn-box{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*---------------andriod-size of about-section end---------- */
+
+
+
+     /*---------------andriod-size of services-section start---------- */
+
+     .main-text{
+        text-align: center;
+     }
+    
+    .section-services{
+        margin-inline: 5%;
+    }
+    
+
+    .section-services .btn-box{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        width: unset;
+    }
+
+     /*---------------andriod-size of services-section end---------- */
+   
+
+      /*---------------andriod-size of skill-section start---------- */
+
+
+
+
+      .skills .main-text{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: unset;
+        padding-top: 30px;
+       
+        
+
+    }
+    
+    .main-texts span, .main-texts h2{
+        width: unset;
+    }
+
+    #skils{
+    
+        background: var(--skill-color);
+        padding-right: 0;
+        overflow: hidden;
+    }
+    .skill-main{
+        width: unset;
+        padding: unset;
+        margin: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .skill-main .skill-left .skill-bar{
+        padding-inline: 14px;
+    }
+    .skill-right .professional{
+        padding-left: 30px;
+        padding-right: 30px;
+        
+    }
+       /*---------------andriod-size of skill-section start---------- */
+
+
+       /*---------------andriod-size of portfolio-section start---------- */
+
+
+       
+    .Portfolio .main-text{
+        padding: unset;
+        padding-top: 30px;
+
+    }
+    
+    .fillter-buttons{
+        text-align: center;
+        margin: unset;
+        padding: unset;
+        width: unset;
+        padding-bottom: 20px;
+    }
+    
+    .fillter-buttons .btn{
+        margin: unset; 
+        padding: 10px;
+    }
+    .portfolio-gallary{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .portfolio-gallary .port-box{
+        height: 220px;
+        width: 355px;
+    }
+
+
+       /*---------------andriod-size of portfolio-section end---------- */
+
+
+
+       /*---------------andriod-size of contact-section start---------- */
+
+
+
+
+       .contact{
+        padding: 0 10px;
+        margin: unset;
+        width: 100%;
+    }
+    .contact .main-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: unset;
+        width: unset;
+    }
+
+   
+       /*---------------andriod-size of contact-section end---------- */
+
+       .end{
+        text-align: center;
+        font-size: 14px;
+        margin: unset;
+        padding: unset;
+        width: unset;
+        width: 100%;
+    }
 }
