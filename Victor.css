@@ -1509,16 +1509,21 @@ footer .arow-up{
     }
     .about-col-2{
         flex-basis: 50%;
+        margin: unset;
     }
     .about-col-2 h5{
         font-size: 12px;
         letter-spacing: 1px;
         text-align: center;
+        margin: unset;
+        width: unset;
     }
     
     .sub-title{
         text-align: center;
         font-size: 50px;
+        margin: unset;
+        margin: unset;
        
     }
     .about-col-2 p{
@@ -1545,7 +1550,7 @@ footer .arow-up{
      }
     
     .section-services{
-        margin-inline: 5%;
+        margin-inline: 4%;
     }
     
 
@@ -1635,6 +1640,9 @@ footer .arow-up{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        width: unset;
+        margin: unset;
+        margin: 0;
     }
     .portfolio-gallary .port-box{
         height: 220px;
@@ -1663,6 +1671,30 @@ footer .arow-up{
         justify-content: center;
         margin: unset;
         width: unset;
+        padding: unset;
+        width: 100%;
+    }
+
+    .contact .btn-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: unset;
+        width: 100%;
+        height: 45px;
+        padding: unset;
+        margin: unset;
+        color: #000000;
+        margin-bottom: 20px;
+    }
+
+    .contact .btn-cv{
+        
+        margin-right: 29px;
+
+    }
+    .contact .btn-hire{
+        margin-left: 15px;
     }
 
    
@@ -1676,4 +1708,102 @@ footer .arow-up{
         width: unset;
         width: 100%;
     }
+}
+
+@media only screen and (max-width: 320px){
+
+    
+      /*---------------andriod small screen-size of skill-section start---------- */
+    .skill-main .skill-left .skill-bar{
+        padding-inline: 12%;
+    }
+    .skill-right .professional{
+        padding-left: 15%;
+        padding-right: 30%;
+        
+    }
+       /*---------------andriod small screen-size of skill-section start---------- */
+
+
+          /*---------------andriod small screen-size of portfolio-section start---------- */
+
+    
+    .fillter-buttons .btn{
+        margin: unset; 
+        padding: 8px;
+    }
+    .portfolio-gallary .port-box{
+        height: 220px;
+        width: unset;
+        width: 310px;
+        object-fit: cover;
+    }
+    
+    /*---------------andriod small screen-size of portfolio-section end---------- */
+
+
+     /*---------------andriod small screen-size of contact-section start---------- */
+
+
+
+
+     .contact{
+        padding: unset;
+        margin: unset;
+        width: unset;
+        width: 100%;
+    }
+    .contact .main-text{
+        width: 100%;
+        padding: unset;
+        
+    }
+    .contact .main-text2{
+        padding-top: 50px;
+    }
+
+   
+       /*---------------andriod small screen-size of contact-section end---------- */
+
+
+
+
+       .social-icon{
+        margin-top: 1px;
+        margin-bottom: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        width: 220px;
+        height: 40px;
+    }
+
+    .contact .btn-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: unset;
+        width: 100%;
+        height: 45px;
+        padding: unset;
+        margin: unset;
+        color: #000000;
+        margin-bottom: 20px;
+    }
+
+    .contact .btn-cv{
+        
+        margin-right: 13px;
+
+    }
+    .contact .btn-hire{
+        margin-left: 3px;
+    }
+    .contact form{
+        width: unset;
+        padding: unset;
+        margin: unset;
+        padding: 4px;
+    }
+
+    
 }
