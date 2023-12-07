@@ -69,6 +69,7 @@ body{
     overflow: hidde;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 /*-- -----------header-section start------- --*/
@@ -239,7 +240,8 @@ body{
 .about-col-1 img{
     width: 88%;
     height: 30rem;
-    background-color: rgb(4, 143, 22);
+    background-color: var(--skill-color);
+    box-shadow: 0 0 5px #000;
     border-radius: 15px;
 }
 .about-col-2{
@@ -382,6 +384,7 @@ body{
 }
 .skill-bar{
     margin-bottom: 3rem;
+    
 }
 .skill-main h3{
     margin-bottom: 2rem;
@@ -692,10 +695,14 @@ svg{
 .port-content h3{
     font-size: 1.5rem;
     font-weight: 700;
+    text-shadow: 0 0  10px #000;
 }
 .port-content p{
-    font-size: .8rem;
+    font-size: 13px;
+    font-weight: 600;
+    text-shadow: 0 0  10px #000;
     margin: 5px 0 15px 0;
+    
 }
 .port-content a i{
     background: #7b00ff;
@@ -1280,23 +1287,29 @@ footer .arow-up{
     }
     .about-col-2 .btn-box{
         margin-top: 2rem;
+        margin: unset;
     }
     /*---------------mobile-size of about-section end---------- */
 
      /*---------------mobile-size of services-section start---------- */
 
-     .main-text{
+     #services .main-text{
         display: flex;
         padding-bottom: 10px;
         align-items: center;
         justify-content: center;
+        margin: unset;
+        width: 10px;
      }
      .main-text span, .main-text h2{
-        width: 18rem;
+        width: unset;
+        width: 250px;
+        margin: unset;
      }
 
      .section-services{
         display: block;
+        
         
         
     }
@@ -1306,6 +1319,7 @@ footer .arow-up{
         padding-bottom: 2px;
         flex-basis: 45%;
         margin-bottom: 3rem;
+        
     }
     .services-box3{
         padding-top: 1rem;
@@ -1322,6 +1336,7 @@ footer .arow-up{
     
 
     .ux-btn{
+        
         display: flex;
         justify-content: start;
         align-content: center;
@@ -1330,6 +1345,7 @@ footer .arow-up{
     }
     .ux-btn .btn{
         margin-bottom: 2.5rem;
+        
     }
 
     /*---------------mobile-size of services-section end---------- */
@@ -1346,8 +1362,6 @@ footer .arow-up{
         justify-content: center;
         align-items: center;
         padding-top: 50px;
-       
-        
 
     }
     
@@ -1359,7 +1373,9 @@ footer .arow-up{
     
         background: var(--skill-color);
         padding-right: 0;
-        overflow: hidden;
+        overflow: hidden; 
+        margin: unset;
+        width: unset;
     }
     .skill-main{
         margin: 0;
@@ -1371,11 +1387,32 @@ footer .arow-up{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
     }
+    .skill-right{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    
+    }
+    .professional{
+        width: 6px;
+        padding-left: 10px;
+        padding-right: 10px;
+        align-items: center;
+        position: unset;
+        margin: 0;
+        
+    }
+    
     .professional .papa{
-        margin: 1px;
-        padding: 0;
-        margin-left: 0;
+        overflow: visible;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-block: 0;
     }
 
     .skill-bar{
@@ -1416,6 +1453,7 @@ footer .arow-up{
         height: 220px;
         width: 360px;
         margin-block: 1px;
+        
     }
 
     /*---------------mobile-size of portfolio-section end---------- */
@@ -1442,10 +1480,10 @@ footer .arow-up{
         height: 40px;
     }
 
-    .btn-box{
+    .contact-box .formBtn{
         display: flex;
         justify-content: space-between;
-        width: 340px;
+        width: 150px;
         height: 45px;
         color: #000000;
         margin-bottom: 20px;
@@ -1454,12 +1492,12 @@ footer .arow-up{
 
     .contact form{
         text-align: center;
-        max-width: 50rem;
+        max-width: 100%;
         margin: 3rem auto;
-        margin-bottom: 1px;
+        margin-bottom: 1px;;
     }
     .formBtn{
-        margin-left: 7rem;
+        margin-left: 110px;
     }
 
     #meniItem i{
@@ -1472,6 +1510,7 @@ footer .arow-up{
         font-weight: bold;
         
     }
+    
 
     
     /*---------------mobile-size of contact-section end---------- */
@@ -1582,6 +1621,17 @@ footer .arow-up{
         
 
     }
+    .skill-main{
+        overflow: hidden;
+    }
+    .skill-right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 30px;
+    }
     
     .main-texts span, .main-texts h2{
         width: unset;
@@ -1606,8 +1656,10 @@ footer .arow-up{
         padding-inline: 14px;
     }
     .skill-right .professional{
-        padding-left: 30px;
-        padding-right: 30px;
+        background: rgb(32, 12, 12);
+        padding-right: 50px;
+        align-items: center;
+       
         
     }
        /*---------------andriod-size of skill-section start---------- */
@@ -1696,6 +1748,17 @@ footer .arow-up{
     .contact .btn-hire{
         margin-left: 15px;
     }
+    .contact-box .formBtn{
+        display: flex;
+        justify-content: space-between;
+        width: 150px;
+        height: 45px;
+        color: #e60404;
+        margin-bottom: 20px;
+        
+    }
+
+
 
    
        /*---------------andriod-size of contact-section end---------- */
@@ -1707,6 +1770,7 @@ footer .arow-up{
         padding: unset;
         width: unset;
         width: 100%;
+
     }
 }
 
