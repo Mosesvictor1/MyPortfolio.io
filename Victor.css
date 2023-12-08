@@ -1782,7 +1782,29 @@ footer .arow-up{
     
       /*---------------andriod small screen-size of skill-section start---------- */
     .skill-main .skill-left .skill-bar{
-        padding-inline: 19%;
+        padding-inline: 0;
+        margin-left: 0;
+        margin-right: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: unset;
+        width: unset;
+        width: 100%;
+    }
+    .skill-main{
+        position: unset;
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+    }
+    .skill-left{
+        position: unset;
+        width: unset;
+        height: unset;
+        padding: unset;
+        width: 100%;
     }
     .skill-right .professional{
         padding-right: 150px;
@@ -1810,7 +1832,7 @@ footer .arow-up{
     .portfolio-gallary .port-box{
         height: 220px;
         width: unset;
-        width: 300px;
+        width: 90%;
         object-fit: cover;
     }
     
