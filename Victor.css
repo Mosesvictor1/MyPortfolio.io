@@ -1756,7 +1756,7 @@ footer .arow-up{
         height: 45px;
         color: #e60404;
         margin-bottom: 20px;
-        
+
         
     }
 
@@ -1784,9 +1784,17 @@ footer .arow-up{
         padding-inline: 12%;
     }
     .skill-right .professional{
-        padding-left: 15%;
-        padding-right: 30%;
-        
+        padding-right: 150px;
+        left: 0;
+        gap: unset;
+    }
+    .paps{
+        position: relative;
+        left: 36px;
+    }
+    .pap{
+        position: relative;
+        right: 36px;
     }
        /*---------------andriod small screen-size of skill-section start---------- */
 
