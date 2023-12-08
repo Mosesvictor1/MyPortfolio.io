@@ -650,6 +650,7 @@ svg{
     background: #3e4c4d;
     display: flex;
     height: 350px;
+    width: 90%;
     grid-template-rows: 1fr auto;
     align-items: center;
     border: 2px solid #00fa15;
