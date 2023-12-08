@@ -1791,6 +1791,7 @@ footer .arow-up{
         position: unset;
         width: unset;
         width: 100%;
+        object-fit: cover;
     }
     .skill-main{
         position: unset;
@@ -1798,6 +1799,7 @@ footer .arow-up{
         justify-content: center;
         align-items: center;
         padding: 40px;
+        object-fit: cover;
     }
     .skill-left{
         position: unset;
@@ -1813,11 +1815,11 @@ footer .arow-up{
     }
     .paps{
         position: relative;
-        left: 40px;
+        left: 20%;
     }
     .pap{
         position: relative;
-        right: 40px;
+        right: 20%;
     }
        /*---------------andriod small screen-size of skill-section start---------- */
 
@@ -1832,7 +1834,7 @@ footer .arow-up{
     .portfolio-gallary .port-box{
         height: 220px;
         width: unset;
-        width: 90%;
+        width: 80%;
         object-fit: cover;
     }
     
