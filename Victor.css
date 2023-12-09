@@ -270,6 +270,174 @@ body{
 
 /*-- -----------About-section end------- --*/
 
+/*=================== ABOUT PAGE ======================*/
+
+/*-- -----------header-section------- --*/
+#header2{
+    background-image: linear-gradient(rgba(0,0,0,.2),#2b135d),url(image/computer\ background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40rem;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    
+}
+.main-7{
+    margin-top: 15rem;
+    font-size: 50px;
+}
+.main-7 h1{
+    color: #00fa15;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-shadow: 0 0 5px #000;
+    animation-name: about;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+
+}
+@keyframes about{
+    0%{color: blue;}
+    30%{color: #00fa15;}
+    80%{color: blue;}
+    100%{color: #00fa15;}
+
+
+
+}
+
+.tab-title{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    gap: 90px;
+    align-items: center;
+}
+.tab-title :nth-child(1){
+    padding-inline: unset;
+    
+}
+.tab-link{
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+}
+.tab-link::after{
+    content: " ";
+    background-color: #00fa15;
+    width: 0;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: 1s;
+}
+.tab-link.active-link::after{
+    width: 100%;
+}
+.tab-content{
+    width: 70%;
+    display: none;
+   
+}
+.tab-content ul li{
+    margin: 12px 0;
+    line-height: 23px;
+}
+.tab-content ul li span{
+    color: #00fa15;
+    font-size: 20px;
+}
+.tab-content.active-tab{
+    display: block;
+    
+}
+
+
+
+
+
+/*------------------ my principle section start----------------*/
+.principle h1{
+    color: #00fa15;
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.princ{
+    font-size: 25px;
+}
+
+.parents{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+.parents .time{
+    font-size: 13px;
+    font-weight: 100;
+    margin: 90px;
+    border: 2px solid;
+    height: 120px;
+    width: 300px;
+    border-radius: 25px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.intergrity{
+    transform: rotateZ(30deg);
+   
+}
+.passion{
+    transform: rotateZ(30deg);
+}
+
+.effective{
+    transform: rotateZ(-30deg);
+}
+.diligence{
+    transform: rotateZ(-30deg);
+}
+
+
+/*------------------ my principle section stop ----------------*/
+
+/*------------------ my lifestyle section start ----------------*/
+
+
+.lifestyle{
+    width: 100%;
+    height: 20rem;
+}
+.lifestyle h3{
+    color: #00fa15;
+    font: 200px;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 20px;
+}
+/*------------------ my lifestyle section stop ----------------*/
+/*=================== ABOUT PAGE ======================*/
+
+
+
+
+
+
+
+
+
 
 /*-- -----------Services-section start------- --*/
 
@@ -1265,7 +1433,6 @@ footer .arow-up{
     .about-col-1 img{
         width: 100%;
         height: 30rem;
-        background-color: rgb(4, 246, 36);
         border-radius: 15px;
     }
     .about-col-2{
@@ -1546,7 +1713,6 @@ footer .arow-up{
     .about-col-1 img{
         width: 100%;
         height: 30rem;
-        background-color: rgb(4, 246, 36);
         border-radius: 15px;
     }
     .about-col-2{
