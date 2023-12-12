@@ -64,6 +64,9 @@ body{
     padding: 0;
 }
 
+ 
+
+
 #container{
     width: 100%;
     overflow: hidde;
@@ -278,7 +281,7 @@ body{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 40rem;
+    height: 50rem;
     width: 100%;
     z-index: 100;
     display: flex;
@@ -1185,6 +1188,19 @@ footer .arow-up{
 
 
 
+search{
+    min-height: 100vh;
+}
+.reveal{
+    position: relative;
+    transform: translateX(-800px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.reveal.active{
+    transform: translateX(0);
+    opacity: 1;
+}
 
 
 @media only screen and (max-width: 768px){
@@ -1407,8 +1423,6 @@ footer .arow-up{
 
 /*---------------mobile-size view of 425 width start---------- */
 @media only screen and (max-width: 425px){
-
-
     #header{ 
         max-width: 100%;
         width: 100%;
@@ -1612,9 +1626,11 @@ footer .arow-up{
         width: 25rem;
     }
     .professional{
-        margin-left: 0;
-        width: 32rem;
-    }
+        margin-inline: 15%;
+        width: 100%;
+        gap: -20px;
+        justify-content: center;
+        padding: 20px;
 
    
     /*---------------mobile-size of skills-section end---------- */
@@ -1989,6 +2005,7 @@ footer .arow-up{
         align-items: center;
         padding: 40px;
         object-fit: cover;
+        width: 100%;
     }
     .skill-left{
         position: unset;
@@ -1998,16 +2015,15 @@ footer .arow-up{
         width: 100%;
     }
     .skill-right .professional{
-        padding-right: 150px;
+        padding-right: 0px;
         left: 0;
         gap: unset;
+        width: 100%;
     }
     .paps{
-        position: relative;
         left: 20%;
     }
     .pap{
-        position: relative;
         right: 20%;
     }
        /*---------------andriod small screen-size of skill-section start---------- */
@@ -2308,7 +2324,8 @@ footer .arow-up{
     margin: 0;
     font-size: 20px;
     text-align: center;
-}
-/*------------------ my lifestyle section stop ----------------*/
+    
 }
 /*=================== ABOUT PAGE ======================*/
+}
+}

@@ -59,7 +59,7 @@
         <!-- -----------About-section start------- -->
         <div id="about">
 
-            <div class="row">
+            <div class="row reveal">
                 <div class="about-col-1">
                     <img src="image/me2.png">
 
@@ -117,39 +117,41 @@
 
 
          
-        <div class="contact principle">
-            <h1>
-                MY GUIDING PRINCIPLES
-            </h1>
-            <div class="princ">
-                <p>
-                    As a Frontend Developer, my principles are deeply rooted in a commitment to crafting digital experiences that seamlessly blend creativity, functionality, and user-centric design. I believe in the power of clean, accessible code and strive for excellence in every line. User experience is paramount; thus, I adhere to the principles of intuitive design, ensuring that every interface I create is not just visually appealing but also effortlessly navigable. Embracing a mobile-first approach, I am dedicated to building responsive and adaptive solutions that cater to the diverse needs of users across various devices. Continuous learning is at the core of my principles, as I actively stay abreast of emerging technologies and design trends to deliver innovative and future-proof solutions. By embracing collaboration, open communication, and a relentless pursuit of excellence, I aim to not just meet but exceed the expectations of clients and users alike.
-                </p>
-            </div>
-
-            <div class="parents">
-               <div>
-                <div class="time intergrity">
-                    <h3>INTERGRITY IS MY WATCHWORD</h3>
+        <div class="contact principle ">
+            <div class="reveal">
+                <h1>
+                    MY GUIDING PRINCIPLES
+                </h1>
+                <div class="princ">
+                    <p>
+                        As a Frontend Developer, my principles are deeply rooted in a commitment to crafting digital experiences that seamlessly blend creativity, functionality, and user-centric design. I believe in the power of clean, accessible code and strive for excellence in every line. User experience is paramount; thus, I adhere to the principles of intuitive design, ensuring that every interface I create is not just visually appealing but also effortlessly navigable. Embracing a mobile-first approach, I am dedicated to building responsive and adaptive solutions that cater to the diverse needs of users across various devices. Continuous learning is at the core of my principles, as I actively stay abreast of emerging technologies and design trends to deliver innovative and future-proof solutions. By embracing collaboration, open communication, and a relentless pursuit of excellence, I aim to not just meet but exceed the expectations of clients and users alike.
+                    </p>
                 </div>
-                <div class="time passion">
-                    <h3>PASSION IS MY CRAFT</h3>
-                </div>
-               </div>
-
-                <div>
-                    <div class="time effective">
-                        <h3>EFFECTIVE COMMUNICATION</h3>
+    
+                <div class="parents">
+                   <div>
+                    <div class="time intergrity">
+                        <h3>INTERGRITY IS MY WATCHWORD</h3>
                     </div>
-                    <div class="time diligence">
-                        <h3>DILIGENCE & TIMELINESS</h3>
+                    <div class="time passion">
+                        <h3>PASSION IS MY CRAFT</h3>
+                    </div>
+                   </div>
+    
+                    <div>
+                        <div class="time effective">
+                            <h3>EFFECTIVE COMMUNICATION</h3>
+                        </div>
+                        <div class="time diligence">
+                            <h3>DILIGENCE & TIMELINESS</h3>
+                        </div>
                     </div>
                 </div>
             </div>
             
         </div>
 
-        <div class="lifestyle">
+        <div class="lifestyle reveal">
             <h1>LIVE OUTSIDE WORK</h1>
             <div class="life">
                 <div id="picture">
@@ -177,9 +179,9 @@
 
         <!-- -----------Contact-section start------- -->
 
-        <section id="contact" class="contact">
+        <section id="contact" class="contact reveal">
             <div class="main-text main-text2 main-text3">
-                <h2>I am not heard to find, let's Creat something truly spectaular!</h2>
+                <h2>I am not heard to find, let's Creat something truly spectacular!</h2>
                 
             </div>
 
@@ -255,6 +257,28 @@
 
         
     </div>
+
+    <script>
+        window.addEventListener("scroll", reveal);
+       
+        function reveal(){
+            var reveals = document.querySelectorAll(".reveal");
+
+
+            for(var i =0; i < reveals.length; i++){
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 160;
+
+                if(revealtop < windowheight - revealpoint){
+                    reveals[i].classList.add('active');
+                }else{
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+
+    </script>
     <script src="mixitup.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
