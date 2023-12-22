@@ -1193,7 +1193,7 @@ search{
 }
 .reveal{
     position: relative;
-    transform: translateY(300px);
+    transform: translateY(120px);
     opacity: 0;
     transition: all 2s ease;
 }
@@ -2515,4 +2515,151 @@ padding: 90px 0px 10px 0px;
 }
 /*------------------------------ THE SOLUTION section end-------------------------*/
 
+
+@media only screen and (max-width: 375px){
+    .Ui-design{
+        padding-inline: 10px;
+    }
+    .Ui-design .learn{
+        width: 100%;
+        text-align: start;
+        align-items: center;
+        font-size: 20px;
+        font-weight: bolder;
+        padding-bottom: 40px;
+        text-transform: uppercase;
+    }
+    
+    .summary{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-inline: 0;
+    }
+    .summary h2{
+        font-size: 30px;
+    }
+    .disc{
+        font-size: 30px;
+        line-height: 35px;
+    
+    }
+    .disc .block{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .disc .block h3{
+        font-size: 40px;
+    }
+    
+    
+    
+    .workflow h1{
+    font-size: 40px;
+    }
+    .workflow p{
+        font-size: 20px;
+        flex-direction: column;
+        margin-inline: 8px;
+    }
+    .ddd{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+
+
+
+
+
+.journy{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 90px;
+}
+
+
+
+
+
+
+
+
+/* ---------------HERE IS WHERE I STOP------------------*/
+.journy .bigin{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 0px;
+    padding-bottom: 50px;
+}
+
+.journy .bigin div, .journy .lasts div{
+    border-radius: 15px;
+    width: 95%;
+    margin-bottom: 25px;
+}
+
+.journy .lasts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.bigin .invest li, .lasts .invest li{
+    list-style: circle;
+    list-style-type: disc;
+    padding: 15px 30px;
+}
+.bigin .invest h2, .lasts .invest h2{
+    color: red;
+    background: #31012b;
+    width: 100%;
+    padding: unset;
+    border-radius: 10px;
+    font-size: 23px;
+    font-weight: bolder;
+}
+.user .point, .testing .points, .idea .points{
+    display: grid;
+    grid-template-columns: 160px 250px;
+    text-align: start;
+    justify-content: start;
+    padding: 0px 0px 0px 20px;
+    width: 100%;
+}
+.user .point li, .testing .points li, .idea .points li{
+    width: 100%;
+    padding: 15px 0px;
+    display: bloc;
+    text-align: start;
+    padding-left: px;
+}
+.idea .points li::befor{
+    content: "\2022";
+    color: red;
+}
+
+
+.solution{
+    text-align: center;
+    padding-block: 50px;
+    
+}
+.solution h3{
+    color: #00fa15;
+}
+
+
+.img-containers .image-colums{
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
 /*=================== UI/UX PAGE END ======================*/
