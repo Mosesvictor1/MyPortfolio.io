@@ -429,6 +429,9 @@
                             </p>
                             <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
+                        <div>
+                            <img src="image/logo3.png" alt="">
+                        </div>
                     </div>
                 </div>
                 
@@ -500,7 +503,7 @@
 
                     </div>
                     <div action>
-                        <form name="submit-to-google-sheet">
+                        <form action="https://formspree.io/f/mwkgewjj" method="POST">
                             <input type="text" name="name" placeholder="Your Name" required>
                             <input type="email" name="email" placeholder="Your Email" required>
                             <input type="text" name="address" placeholder="Your Address" required>
@@ -509,7 +512,6 @@
                             <div class="btn-box formBtn">
                                 <button type="submit" class="btn forms">Send Message</button>
                             </div>
-                            <span id="msg"></span>
                         </form>
                     </div>
 
@@ -741,6 +743,7 @@
                 css.innerHTML = C + "%"
             }
         }, 25);
+    dispatchEvent
 
         let J = 0;
         setInterval(() => {
